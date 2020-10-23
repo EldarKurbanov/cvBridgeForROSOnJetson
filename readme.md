@@ -23,7 +23,7 @@ I was able to successfully compile cv_bridge with opencv4 below are the rough no
 
 1) Added set (CMAKE_CXX_STANDARD 11) at src/vision_opencv/cv_bridge in the top level cmake
 2) Changed find_package(OpenCV 3 REQUIRED TO find_package(OpenCV 4 REQUIRED on line 18 at src/vision_opencv/cv_bridge
-3) In cv_bridge/src CMakeLists.txt line 35 changed to if (OpenCV_VERSION_MAJOR VERSION_EQUAL 4)
+3) In cv_bridge/src CMakeLists.txt line 35 changed TO if (OpenCV_VERSION_MAJOR VERSION_EQUAL 4)
 4) In cv_bridge/src/module_opencv3.cpp changed signature of two functions    
 
 a) UMatData* allocate(int dims0, const int* sizes, int type, void* data, size_t* step, int flags, UMatUsageFlags usageFlags) const
